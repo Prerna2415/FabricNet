@@ -2,14 +2,14 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --fix-missing \
     build-essential \
     curl \
     software-properties-common \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/Prerna2415/FabricNet.git .
+COPY ./app /app
 
 RUN pip3 install -r requirements.txt
 
