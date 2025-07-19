@@ -6,7 +6,7 @@ import tensorflow as tf
 # Load the model
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model('fabricnet_best_fold_3.keras')
+    model = tf.keras.models.load_model('app/fabricnet_best_fold_3.keras')
     return model
 
 model = load_model()
