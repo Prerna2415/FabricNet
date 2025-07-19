@@ -1,4 +1,7 @@
 streamlit
 Pillow
 numpy
-tensorflow
+tensorflow==2.12.0
+pandas
+scikit-learn
+matplotlib
