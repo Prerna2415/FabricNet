@@ -1,3 +1,0 @@
-# FabricNet
-
-work in progress..
